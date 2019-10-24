@@ -1,7 +1,11 @@
 # This file controls the AWS CodeBuild
 
 version: 0.2
+
 phases:
+  install:
+    runtime-versions:
+        java: 1.7
   pre_build:
     commands:
     - echo "Entered the pre-build phase"
